@@ -11,12 +11,12 @@
     <script src="date.js" defer></script>
 
 </head>
-<body>
+<body class="h-screen flex items-center justify-center">
 
     <main>
   
         <!-- Time -->
-        <time class="time">
+        <time class="time container mx-auto block grid lg:grid-cols-6 md:grid-cols-2 font-mono">
                 <data class="hours">HH</data> :
                 <data class="minutes">MM</data> :
                 <data class="seconds">SS</data>
@@ -25,7 +25,7 @@
       
           
         <!-- Date -->
-        <time class="date">
+        <time class="date container mx-auto block grid lg:grid-cols-5 md:grid-cols-2 font-mono">
           <data class="month">Month</data>
           <data class="dayOfMonth">00</data>,
           <data class="year">0000</data> -
