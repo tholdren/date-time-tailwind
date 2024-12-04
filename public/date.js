@@ -11,7 +11,7 @@ const allTheMonths = [
     "July",
     "August",
     "September",
-    "October",
+    "Oct.",
     "November",
     "December"
   ];
