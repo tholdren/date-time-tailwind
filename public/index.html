@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS Starter Kit</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Starter Kit</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-    <script src="time.js" defer></script>
-    <script src="date.js" defer></script>
+  <script src="time.js" defer></script>
+  <script src="date.js" defer></script>
 
 </head>
-<body class="h-screen flex items-center justify-center">
-
-    <main>
-  
+<body class="flex items-center justify-center h-screen bg-gray-100">
+  <div class="bg-white p-8 rounded-lg shadow-lg">
+    <main class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
+      <div class="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3">
         <!-- Time -->
-        <time class="time container mx-auto block grid lg:grid-cols-2 md:grid-cols-2 font-mono">
-                <data class="hours">HH</data> 
-                <data class="minutes">MM</data> 
-                <data class="seconds">SS</data>
-                <data class="amOrPM">AM/PM</data>
-            </time>
-      
-          
+        <div class="mx-auto flex max-w-xs flex-col gap-y-4 space-y-4">
+          <div class="order-first text-6xl font-bold tracking-tight text-blue-900">
+            <data class="hours">HH</data>:<data class="minutes">MM</data>:<data class="seconds">SS</data>
+          </div>
+          <data class="amOrPM text-2xl text-blue-600">AM/PM</data>
+        </div>
+        
         <!-- Date -->
-        <time class="date container mx-auto block grid lg:grid-cols-3 md:grid-cols-2 font-mono">
-          <data class="month">Month</data>
-          <data class="dayOfMonth">00</data>
-          <data class="year">0000</data> 
-          <data class="dayOfWeek">SMTWTFS</data>
-        </time>
-      
-      </main>
-    
+        <div class="mx-auto flex max-w-xs flex-col gap-y-4 space-y-4">
+          <div class="text-2xl font-semibold text-green-900">
+            <data class="month">Month</data> <data class="dayOfMonth">00</data>, <data class="year">0000</data>
+          </div>
+          <data class="dayOfWeek text-lg text-green-600">SMTWTFS</data>
+        </div>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
